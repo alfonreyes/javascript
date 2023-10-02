@@ -64,7 +64,7 @@ console.log("el precio final de tu viaje es de " + precioconIVA(totalviaje, IVA)
 
 confirm("Quieres confirmar tu compra?")
 
-const destino = ["cordoba", "mendoza", "bsas", "bariloche"]
+const viajes = ["cordoba", "mendoza", "bsas", "bariloche"]
 
 viajes.push("formosa")
 console.log(viajes)
@@ -84,4 +84,17 @@ console.log(viajes)
 viajes.reverse()
 console.log(viajes)
 
-
+const productos = []
+function agregarproductos(){
+   let productosagregar = prompt("que producto deseas agregar")
+   while(productosagregar.trim() === " ")
+     alert("no ingreses espacios vacios")
+    if(productosagregar.includes){
+      alert("ese producto ya existe, ingrese otro")
+    }
+    else{
+      productos.push(productosagregar)
+      alert("produtos agregados correctamente")
+    }
+  }
+agregarproductos()
