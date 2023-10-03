@@ -87,8 +87,10 @@ console.log(viajes)
 const productos = []
 function agregarproductos(){
    let productosagregar = prompt("que producto deseas agregar")
-   while(productosagregar.trim() === " ")
-     alert("no ingreses espacios vacios")
+   while(productosagregar.trim() === ""){
+    productosagregar = prompt("que producto deseas agregar?")
+     alert("no ingreses espacios vacios")}
+
     if(productosagregar.includes){
       alert("ese producto ya existe, ingrese otro")
     }
@@ -98,3 +100,8 @@ function agregarproductos(){
     }
   }
 agregarproductos()
+
+let seguircomprando = confirm("desea seguir comprando")
+do{
+  seguircomprando = confirm("desea seguir comprando")
+}while(seguircomprando= false)
