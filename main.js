@@ -1,7 +1,7 @@
 //funciones //
 function saludar (){
   nombre = prompt("Ingrese su nombre y apellido")
-  alert(`Hola ${nombre}, Bienvenido a nuestro sitio web.` )
+  console.log(`Hola ${nombre}, Bienvenido a nuestro sitio web.` )
 }
 saludar()
 
@@ -22,25 +22,25 @@ corroboraredad(añocorriente, añonacimiento)
 //condicionales//
 let pregunta = prompt('ya sabes cual va a ser tu proximo destino?')
 if(pregunta == "si"){
-   alert('perfecto, busca en nuestros destinos el que tengas ya elejido')
+   console.log('perfecto, busca en nuestros destinos el que tengas ya elejido')
 }else{
-  alert('no te preocupes, nosotros te vamos a ayudar a elejir el mejor destino para tus proximas vacaciones')
+  console.log('no te preocupes, nosotros te vamos a ayudar a elejir el mejor destino para tus proximas vacaciones')
 }
 
 function elegirdestino(){
   let destino = prompt("elegi el destino que queres visitar: cordoba, bsas, jujuy, patagonia")
   switch(destino){
     case "cordoba":
-      alert("elegiste cordoba, el valor del pasaje es de $60000")
+      console.log("elegiste cordoba, el valor del pasaje es de $60000")
       break
     case "bsas": 
-     alert("elegiste bsas, el valor del pasaje es de $80000")
+     console.log("elegiste bsas, el valor del pasaje es de $80000")
      break
     case "jujuy":
-      alert("elegiste jujuy, el valor del pasaje es de $100000")
+      console.log("elegiste jujuy, el valor del pasaje es de $100000")
       break
     case "patagonia":
-      alert("elegiste patagonia, el valor del pasaje es de $150000")
+      console.log("elegiste patagonia, el valor del pasaje es de $150000")
       break
   }
 }
@@ -52,7 +52,7 @@ function valordeviaje(){
      let pasajeros = prompt("cuantos pasajeros van a viajar")
      let resultado = valor * pasajeros
 
-     alert(resultado)
+     console.log(resultado)
 }
 
 valordeviaje()
@@ -101,7 +101,7 @@ function agregarproductos(){
   }
 agregarproductos()
 
-let seguircomprando = confirm("desea seguir comprando")
+//let seguircomprando = confirm("desea seguir comprando")
 do{
   seguircomprando = confirm("desea seguir comprando")
-}while(seguircomprando= false)
+}while(seguircomprando == false)
